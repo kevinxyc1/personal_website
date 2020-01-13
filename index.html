@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html class="index">
-<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-<div>
-	<nav class="nav">
-	 <a href="index.html"><div class="home">Home</div></a>
-	 <a href="experiences.html"><div class="experiences">Experiences</div></a>
-	 <a href="projects.html"><div class="projects">Projects</div></a>
-	</nav>
-</div>
-
-
   <head>
-    <title>Kevin Xu</title>
+    <title>Welcome to Kevin Xu's Home Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Neue+Helvetica®+Georgian" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic|Playfair+Display|Neue+Helvetica®+Georgian|Great+Vibes|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <script type="text/javascript">
+	var myElement = $('.wrapper');
+
+	$(window).on('scroll', function() {
+	    var st = $(this).scrollTop();
+	    myElement.css({
+	        'opacity' : 1 - st/600
+	    });
+	});
+    </script>
   </head>
   
   <body class="in">
-  	<div class="wrapper">
 
-  		<div class="left">
-		  	<img class="profile-picture" src = "img/profile.jpg" width = "300" height ="200" />
+	<div><nav class="nav">
+		 <a href="index.html"><div class="home">Home</div></a>
+		 <a href="experiences.html"><div class="experiences">Experiences</div></a>
+		 <a href="projects.html"><div class="projects">Projects</div></a>
+		 <a href="contact.html"><div class="contact">Contacts</div></a>
+		</nav>
+	</div>
+	<div class="wrapper">
+		<!--
+		<div class="left">
 		    <h1 class="name">Kevin Xu</h1>
-		    <h2 class="subtitle">CS Student</h2>
+		   	<h2 class="subtitle">Developer | Researcher</h2>
 		</div>
+		-->
+	</div>
+		
 
-		<div class="right">
-		    <p class="bio">Hello! I am a current first year CS student at University of Waterloo. I am interested in machine learning research and web development, and my favourite programming languages are java, python, JavaScript and HTML/CSS, and am looking forward to learning more. Aside from CS, I love music (guitar, violin, saxophone and song production), travelling and go game. </p>
+	<div class="about">
+			<h3 class="abouttitle">
+				About Me
+			</h3>
 
-		    <ul class="social-links">
-		    	<li>
-		    		<a href = "https://github.com/kevinxyc1">Github</a>
-		    	</li>
-		    	<li>
-		    		<a href = "https://www.linkedin.com/in/kevinxu820/">LinkedIn</a>
-		    	</li>
-		    </ul>
+			<p class="bio">Hello! I am a current first year CS student at University of Waterloo. I am interested in machine learning research and web development, and my favourite programming languages are java, python, JavaScript and HTML/CSS, and am looking forward to learning more. Aside from CS, I love music (guitar, violin, saxophone and song production), travelling and go game. </p>
+			
+	</div>
 
+	<div class="skill">
+		<h4 class="skilltitle">Skills</h4>
+		<div class="s1">
+			<img src="img/skill.png" class="skillimg">
 		</div>
+	</div>
 
+	<div class="indexfooter" style="position: relative;
+  top: 230px; ">
+		<h1 style="text-align: center;">
+			<a href="https://github.com/kevinxyc1" class="fa fa-github"></a>
+			<a href="https://www.facebook.com/kevin.xu.54584" class="fa fa-facebook"></a>
+			<a href="ttps://www.instagram.com/kevinxyc1/" class="fa fa-instagram"></a>
+			<a href="https://www.linkedin.com/in/kevinxu820/" class="fa fa-linkedin"></a>
+			
+		</h1>
+		<br>
+		<br>
 	</div>
   </body>
 </html>
